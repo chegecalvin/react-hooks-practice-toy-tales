@@ -1,41 +1,49 @@
-# Practice Challenge: Toy Tales
+# CABAC Wheels
 
-You've got a friend in need! Again!
+## About Us
+Welcome to the virtual showroom of CABAC Wheels, where automotive innovation meets unparalleled luxury. As you embark on this journey through our brand, allow us to introduce you to the epitome of automotive excellence.At CABAC Wheels, we pride ourselves on pushing the boundaries of what's possible, delivering vehicles that not only exceed expectations but redefine the driving experience altogether. With a heritage steeped in craftsmanship and a vision set on the future, each car bearing our emblem is a testament to our unwavering commitment to quality and innovation.Step inside and explore our meticulously curated lineup, where every model represents the pinnacle of design, performance, and technology. From sleek sedans engineered for precision handling to rugged SUVs built to conquer any terrain, we offer a diverse range of vehicles tailored to suit every lifestyle and preference.
 
-Andy has misplaced of his toys (again) and need your help to organize them.
+## Project Features
+The website allows a user to get in depth information on a vehicle by displaying a car's image,name,make,model,description and year of manufacture. A user can search for a car based on its name which diplays all its components eg the image.
+
+## Technologies Used
+1. JavaScript
+2. React FrameWork
+3. Flowbite
+4. Tailwind CSS
 
 ## Setup
+To run this application locally, follow these steps:
 
-All the information about Andy's toys can be found in the `db.json` file. We'll
-be using `json-server` to create a RESTful API for our database.
+   1. Fork then clone the repository to your device:
+      ```
+      git clone git@github.com:casey829/CABAC-Wheels.git
+      ```
+    2. Navigate to the project directory:
+      ```
+       cd CABAC-Wheels
+       ```
+    3. Install dependencies:
+        ```
+        npm install
+        ```
+    4. Start up the json-server on http://localhost:3001/cars
+        ```
+        npm run server
+        ```
+    5. On another tab start up the react app
+        ```
+        npm start
+        ```
 
-Run `npm install` to install our dependencies.
+## Contributors
+1. Audrey Cherop
+2. Akisa Moruri
+3. Brian Juma
+4. Calvin Chege
+5. Casey Kimamo
 
-Then, run `npm run server` to start up `json-server` on `http://localhost:3001`.
-
-In another tab, run `npm start` to start up our React app at `http://localhost:3000`.
-
-Before you start building out the application, the first step that you should
-take is to draw out your component hierarchy. This will tell you how components
-can pass data to each other as well as where that information should be stored.
-
-## Deliverables
-
-- _When our application loads_, make a GET request to `/toys` to fetch the toy
-  array. Given your component tree, think about which component should be
-  responsible for the array. After you have put the data in the proper
-  component, your next job is to render the `ToyCard` components on the page.
-
-- _When the `ToyForm` is submitted_, make a POST request to `/toys` to save a
-  new toy to the server. Using the ideas of controlled form and inverse data
-  flow, think about how to render a new `ToyCard` for the toy that you created.
-
-- _When the `Donate to Goodwill` button is clicked_, make a DELETE request to
-  `/toys/:id` with the ID of the toy that was clicked to delete the toy from the
-  server. The `ToyCard` that you clicked on should also be removed from the DOM.
-
-- _When the like button is clicked_, make a PATCH request to `/toys/:id` with
-  the id of the toy that was clicked, along with the new number of likes (this
-  should be sent in the body of the PATCH request, as a object:
-  `{ likes: 10 }`), to update the toy on the server. Clicking on the button
-  should also increase the number of likes on the DOM.
+## Contact Us
+For any inquiries or suggestions, feel free to email us at:
+     cabacwheels@gmail.com
+        
