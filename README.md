@@ -21,7 +21,7 @@ To run this application locally, follow these steps:
       ```
 
     2. Navigate to the project directory:
-      ```
+       ```
        cd CABAC-Wheels
        ```
 
@@ -34,7 +34,7 @@ To run this application locally, follow these steps:
         ```
         npm run server
         ```
-        
+
     5. On another tab start up the react app
         ```
         npm start
