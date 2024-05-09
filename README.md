@@ -19,18 +19,22 @@ To run this application locally, follow these steps:
       ```
       git clone git@github.com:casey829/CABAC-Wheels.git
       ```
+
     2. Navigate to the project directory:
       ```
        cd CABAC-Wheels
        ```
+
     3. Install dependencies:
         ```
         npm install
         ```
+
     4. Start up the json-server on http://localhost:3001/cars
         ```
         npm run server
         ```
+        
     5. On another tab start up the react app
         ```
         npm start
